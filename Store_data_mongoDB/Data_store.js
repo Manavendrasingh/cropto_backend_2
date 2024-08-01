@@ -26,8 +26,8 @@ const Data = async () => {
 
 }
 
-// setInterval(async()=>{
-//     Data();
-// },5000)
+setInterval(async()=>{
+    Data();
+},5000)
 
 export default Data;
