@@ -21,7 +21,9 @@ dbConnect().then(()=>{
     console.log("database is  not connected successfully");
 })
  
-
+setInterval(async()=>{
+    Data();
+},5000)
    
 
 
