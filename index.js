@@ -3,10 +3,13 @@ import FetchData from './FetchData.js';
 import dbConnect from './dbConnect.js';
 import cropto_route from './Router/Cropto.Route.js';
 import Data from './Store_data_mongoDB/Data_store.js';
+import cors from 'cors'
 
  
 
 const app_server = express();
+
+app_server.use(cors());
 app_server.use("/",cropto_route);
 
 dbConnect().then(()=>{
