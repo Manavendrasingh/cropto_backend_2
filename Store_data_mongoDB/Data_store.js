@@ -5,6 +5,7 @@ const Data = async () => {
     try{
         const fetched_data = await FetchData();
         for (let data of fetched_data) {
+               data.rate = data.rate.toFixed(2);
               let code = data.code;
               let find_Data  =  await  cropto_model.findOne({code:code});
             

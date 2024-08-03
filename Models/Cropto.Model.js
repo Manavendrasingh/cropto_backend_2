@@ -4,7 +4,7 @@ const {Schema ,model} = mongoose;
 
 const cropto_schema = new Schema({
     code : {type : String},
-    rate: {type :  Number},
+    rate: {type :  Number,},
     volume: { type : Number},
     cap: { type : Number},
     delta: {
