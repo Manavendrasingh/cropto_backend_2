@@ -23,8 +23,6 @@ const Data = async () => {
         console.log(error.message);
      }
 
-
-
 }
 
 
